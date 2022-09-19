@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+
+
+    <!---Nav Bar-->
+    <nav class="navbar is-white has-shadow">
+        <div class="navbar-brand">
+            <a href="../index.html" class="navbar-item">
+                <img src="assets/logo.png" atl="site_logo" style="max-height:70px">
+            </a>
+
+
+            <!-- the navbar burger only shows when the screen size is reduced-->
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+
+        <!--- these items will be on the left of the navbar as they have the class navbar-start-->
+        <div class="navbar-menu">
+            <div class="navbar-start">
+
+                <a href="../index.html" class="navbar-item">Home</a>
+
+
+                <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">pages</a>
+                    <!--- nav bar link to get the button with down arrow-->
+                    <div class="navbar-dropdown">
+
+                        <!---these are the drop down elements -->
+                        <a href="../orderparts.html" class="navbar-item">Order Parts</a>
+                        <a href="../contact.html" class="navbar-item"> Contact </a>
+                        <a class="navbar-item"> Option 3 </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">Option 4</a>
+                        <!--- OPtion 4 is behind a divider-->
+                    </div>
+                </div>
+
+                <a href="../video.html" class="navbar-item">Video</a>
+
+            </div>
+
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-link">Sign Up</a>
+                        <!--- isprimary / is-link are the colours -->
+                        <a class="button is-primary">Log In</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </nav>
+
+
+
+    <!--- may you want to play around with more navigation? Breadcrumbs could work?-->
+    <section class="section pt-4 pb-0">
+        <!--- Pt / Pb is padding top and bottom.-->
+        <nav class="breadcrumb has-arrow-separator ">
+            <ul class="is-size-9">
+                <li><a>Page Navigation Crumb 1</a></li>
+                <li><a>Page Navigation Crumb 2</a></li>
+                <li class="is-active"><a class="has-text-grey">Page Navigation Crumb 3</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!--- Main Section -->
+
+    <!--- Products -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-6-tablet is-3-desktop">
+                    <h2 class="is-size-3-mobile is-size-1-desktop title">ENGINES</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus quidem ullam libero
+                        molestiae. Autem id sit reprehenderit tempore esse molestias facere voluptatem sapiente
+                        quibusdam! Ex quae earum rem. Maiores?</p>
+                </div>
+                <div class="column is-6-tablet is-5-desktop has-text-centered">
+                    <img src="../assets/engine.jpg" alt="engine" class="px-6">
+
+                </div>
+                <div class="column is-12-tablet is-4-desktop">
+                    <div class="is-size-4 mb-4">£100,000</div>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, excepturi.</p>
+                    <button class="button is-primary is-small" id="addtocart">Add to Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8 is-variable is-multiline">
+                <div class="column is-7-tablet">
+                    <!---Tabbed Content-->
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a>Product Details</a>
+                            </li>
+                            <li data-target="delivery-information">
+                                <a>Delivery Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-5 title">Product Details</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda alias libero
+                                doloremque sint nemo asperiores omnis doloribus earum laborum ad tenetur sequi veritatis
+                                unde, magnam odit officia dolore architecto illo.</p>
+                        </div>
+                        <div id="delivery-information" class="is-hidden">
+                            <h3 class="is-5 title">Delivery Information</h3>
+                            <p>Delivery to your local military establishment within 1 - 2 working weeks.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column is-5-tablet is-12-mobile">
+                    <!---message box-->
+                    <div class="message is-danger">
+                        <div class="message-header">
+                            <p>Disclaimer</p>
+                        </div>
+                        <div class="message-body">
+                            <p>All purchases are subject to status and security vetting!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- here we will have the footer-->
+
+    <section class="section">
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>This basic site was created by <strong>Thomas Morris</strong> as part of the JHub coding scheme and
+                    last revised on 20/04/2020
+                    Thanks for taking a look!</p>
+            </div>
+        </footer>
+    </section>
+
+
+    <script>
+        //js for the tabs
+
+        const tabs = document.querySelectorAll('.tabs li'); // grabbing the tabs and list items 
+        const tabContentBoxes = document.querySelectorAll('#tab-content > div'); // grabs content recursively from the tab-content id element
+
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(item => item.classList.remove('is-active'));
+                tab.classList.add('is-active');
+
+                const target = tab.dataset.target;
+                tabContentBoxes.forEach(box => {
+                    if (box.getAttribute('id') === target) {
+                        box.classList.remove('is-hidden');
+                    } else {
+                        box.classList.add('is-hidden');
+                    }
+                })
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, thanks for visiting!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+
+
+    <!---Nav Bar-->
+    <nav class="navbar is-white has-shadow">
+      <div class="navbar-brand">
+        <a href="./index.html" class="navbar-item">
+          <img src="assets/OIP.png" atl="site_logo" style="max-height:70px">
+        </a>
+        
+
+        <!-- the navbar burger only shows when the screen size is reduced-->
+        <a class="navbar-burger" id="burger"> 
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+
+      <!--- these items will be on the left of the navbar as they have the class navbar-start-->
+      <div class="navbar-menu">
+        <div class="navbar-start">
+
+          <a href="./index.html" class="navbar-item">Home</a>
+
+
+          <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">pages</a> <!--- nav bar link to get the button with down arrow-->
+            <div class="navbar-dropdown">
+
+              <!---these are the drop down elements -->
+              <a href="./orderparts.html" class="navbar-item">Order Parts</a>
+              <a class="navbar-item"> Contact </a>
+              <a class="navbar-item"> Option 3 </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">Option 4</a> <!--- OPtion 4 is behind a divider-->
+            </div>
+          </div>
+
+          <a href="./video.html" class="navbar-item">Video</a>
+
+        </div>
+
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-link">Sign Up</a> <!--- isprimary / is-link are the colours -->
+              <a class="button is-primary">Log In</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </nav>
+
+
+    <section class="hero is-primary is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">TEST BANNER</p>
+          <p class="subtitle">Subtitle</p>
+        </div>
+      
+      </div>
+    </section>
+
+
+  <!--- may you want to play around with more navigation? Breadcrumbs could work?-->
+  <section class="section pt-4 pb-0"> <!--- Pt / Pb is padding top and bottom.-->
+    <nav class="breadcrumb has-arrow-separator ">
+      <ul class="is-size-9">
+        <li><a>Page Navigation Crumb 1</a></li>
+        <li><a>Page Navigation Crumb 2</a></li>
+        <li class="is-active"><a class="has-text-grey">Page Navigation Crumb 3</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!--- section demonstrating a form. Elements could go anywhere maybe even in a pop up modal.-->
+
+  <section class="section">
+    <div class="container">
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Username</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help is-success">This username is available</p>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger">This email is invalid</p>
+      </div>
+      
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="#">terms and conditions</a>
+          </label>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Yes
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            No
+          </label>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--- here we will have the footer-->
+
+  <section class="section">
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>This basic site was created by <strong>Thomas Morris</strong> as part of the JHub coding scheme and last revised on 20/04/2020
+          Thanks for taking a look!</p>
+      </div>
+    </footer>
+  </section>
+
+
+
+  </body>
+</html>

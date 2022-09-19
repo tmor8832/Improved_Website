@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+
+
+    <!---Nav Bar-->
+    <nav class="navbar is-white has-shadow">
+      <div class="navbar-brand">
+        <a href="/index.html" class="navbar-item">
+          <img src="assets/OIP.png" atl="site_logo" style="max-height:70px">
+        </a>
+        
+
+        <!-- the navbar burger only shows when the screen size is reduced-->
+        <a class="navbar-burger" id="burger"> 
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+
+      <!--- these items will be on the left of the navbar as they have the class navbar-start-->
+      <div class="navbar-menu">
+        <div class="navbar-start">
+
+          <a href="index.html" class="navbar-item">Home</a>
+
+
+          <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">pages</a> <!--- nav bar link to get the button with down arrow-->
+            <div class="navbar-dropdown">
+
+              <!---these are the drop down elements -->
+              <a href="./orderparts.html" class="navbar-item">Order Parts</a>
+              <a href="./contact.html" class="navbar-item"> Contact </a>
+              <a class="navbar-item"> Option 3 </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">Option 4</a> <!--- OPtion 4 is behind a divider-->
+            </div>
+          </div>
+
+          <a href="./video.html" class="navbar-item">Video</a>
+
+        </div>
+
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-link">Sign Up</a> <!--- isprimary / is-link are the colours -->
+              <a class="button is-primary">Log In</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </nav>
+
+<!--- Hero Class gives you a full width banner. In it's default version it looks like this but can use a differnt ]
+class to take up more space vertically if required. Useful for an announcement of some kind maybe -->
+
+  <section class="hero is-danger">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">A Full Width Banner to Potentially showcase something!</p>
+        <p class="subtitle">Subtitle</p>
+      </div>
+    
+    </div>
+  </section>
+
+  <!--- may you want to play around with more navigation? Breadcrumbs could work?-->
+  <section class="section pt-4 pb-0"> <!--- Pt / Pb is padding top and bottom.-->
+    <nav class="breadcrumb has-arrow-separator ">
+      <ul class="is-size-9">
+        <li><a>Page Navigation Crumb 1</a></li>
+        <li><a>Page Navigation Crumb 2</a></li>
+        <li class="is-active"><a class="has-text-grey">Page Navigation Crumb 3</a></li>
+      </ul>
+    </nav>
+  </section>
+
+
+  <!--- sections are used to seperate out sections of your website. Best used as a direct child of body-->
+  <section class="section">
+    <div class="columns"> <!--- Columns class used to seperate out elements horizontally within the section-->
+      <div class="column is-one-fifth"> <!--- within the columns container you need a column or multiple. This one takes up to a fifth of the space.-->
+        <aside class="menu">
+          <p class="menu-label">General Menu</p>
+          <ul class="menu-list">
+            <li><a>Home Page</a></li>
+            <li><a>Item Two</a></li>
+            <li><a>Item Three </a></li>
+          </ul>
+          <p class="menu-label"> Menu Label 2 </p>
+          <ul class="menu-list">
+            <li><a>Second Part of Menu</a></li>
+            <li>
+              <a class="is-active">Nested Menu's maybe?</a> <!--- you can use JS to toggle the is Active-->
+              <ul>
+                <li><a>Nested 1</a></li>
+                <li><a>Nested 2</a></li>
+                <li><a>Nested 3</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </aside>
+      </div>
+
+
+
+      <div class="column">
+        <div class="content"> <!--- if you're simply using HTML tags best to just wrap in a content container-->
+          <p class="subtitle">This bespoke site lets you calculate the cost of ordering spare parts for your aircraft!
+
+            Thank-you for visiting and I hope you find everything that you need. Any suggestions for how we can make the site better are welcome.
+            
+            Lets get that aircraft up and running again!</p>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop">
+            <img src="assets/damage_engine.jpg" alt="engine_damage">
+          </div>
+          <div class="column is-8">
+            <p>
+              This is mainly an example of how you can nest columns layout containers. You could have as many columns as you want 
+              it's a good way to break up your page. 
+              Text or Pictures etc can go into these containers.
+            </p>
+          </div>
+        </div>
+
+        <div class="columns is-multiline"> <!--- many sizes available but made up of a 12 grid system-->
+          <div class="column is-3-desktop is-6-tablet">
+            <div class="has-background-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis sint illo itaque iusto, rem dicta debitis nemo dignissimos dolores earum eos inventore quibusdam dolor atque. Illum, minus soluta. Numquam.</p>
+            </div> <!--- demoing here the different between giving the column a background colour compared to the div inside-->
+          </div>
+          <div class="column is-3-desktop is-6-tablet has-background-success">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum ex doloremque qui necessitatibus odit voluptas sed obcaecati eum? Reiciendis minus, ex vel temporibus dignissimos consequuntur sunt. Aliquid, atque maiores!</p>
+          </div>
+          <div class="column is-3-desktop is-6-tablet has-background-danger">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, iusto esse magni ducimus inventore quae, architecto rem veritatis voluptates recusandae cum. Autem, explicabo non? Tempora cum vitae amet soluta doloribus!</p>
+          </div>
+          <div class="column is-3-desktop is-6-tablet has-background-warning"> <!---is-6-tablet changes the layout depending on screen size. You need the is-multiline class in the columns for it to work-->
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ipsam ea harum! Cupiditate assumenda cumque aperiam, eius qui dolorem consectetur consequuntur suscipit optio dolores porro quidem officia possimus. Modi, odit?</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    
+  </section>
+
+  <!--- here we will have the footer-->
+
+  <section class="section">
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>This basic site was created by <strong>Thomas Morris</strong> as part of the JHub coding scheme and last revised on 20/04/2020
+          Thanks for taking a look!</p>
+      </div>
+    </footer>
+  </section>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+
+
+  <!---Nav Bar-->
+  <nav class="navbar is-white has-shadow">
+    <div class="navbar-brand">
+      <a href="./index.html" class="navbar-item">
+        <img src="assets/OIP.png" atl="site_logo" style="max-height:70px">
+      </a>
+
+
+      <!-- the navbar burger only shows when the screen size is reduced-->
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+
+    <!--- these items will be on the left of the navbar as they have the class navbar-start-->
+    <div class="navbar-menu">
+      <div class="navbar-start">
+
+        <a href="./index.html" class="navbar-item">Home</a>
+
+
+        <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">pages</a>
+          <!--- nav bar link to get the button with down arrow-->
+          <div class="navbar-dropdown">
+
+            <!---these are the drop down elements -->
+            <a class="navbar-item">Order Parts</a>
+            <a href="contact.html" class="navbar-item"> Contact </a>
+            <a class="navbar-item"> Option 3 </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">Option 4</a>
+            <!--- OPtion 4 is behind a divider-->
+          </div>
+        </div>
+
+        <a href="./video.html" class="navbar-item">Video</a>
+
+      </div>
+
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-link">Sign Up</a>
+            <!--- isprimary / is-link are the colours -->
+            <a class="button is-primary">Log In</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </nav>
+
+
+  <!--- may you want to play around with more navigation? Breadcrumbs could work?-->
+  <section class="section pt-4 pb-0">
+    <!--- Pt / Pb is padding top and bottom.-->
+    <nav class="breadcrumb has-arrow-separator ">
+      <ul class="is-size-9">
+        <li><a>Page Navigation Crumb 1</a></li>
+        <li><a>Page Navigation Crumb 2</a></li>
+        <li class="is-active"><a class="has-text-grey">Page Navigation Crumb 3</a></li>
+      </ul>
+    </nav>
+  </section>
+
+
+  <!--- products section-->
+
+  <section class="section">
+    <div class="container">
+      <!--- we're using the container class to centre it in the page -->
+      <div class="columns is-multiline is-vcentered pt-6">
+        <!--- Engines -->
+        <div class="column is-6-tablet is-3-desktop">
+          <h1 class="title">ENGINES</h1>
+          <h2 class="subtitle">SERVING ALL AIRCRAFT TYPES</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque perspiciatis culpa enim vel
+            libero, temporibus earum minima quibusdam alias, a maiores delectus velit quaerat laborum reprehenderit in.
+            Ad, repudiandae.</p>
+        </div>
+        <div class="column is-6-tablet is-5-desktop has-text-centered">
+          <img src="assets/engine.jpg" alt="engine" class="px-6">
+        </div>
+        <div class="column is-12-tablet is-4-desktop">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique.</p>
+          <button class="button is-info is-medium" id="orderFormBtn">Order Form</button>
+          <a href="./products/engine.html" class="button is-warning is-medium">Prodcut Page</a>
+        </div>
+      </div>
+      <hr>
+      <!---this is just a spacer that I think looks cool.-->
+
+      <!--- WHeels-->
+      <div class="columns is-multiline is-vcentered">
+        <div class="column is-6-tablet is-3-desktop">
+          <h1 class="title">WHEELS</h1>
+          <h2 class="subtitle">SERVING ALL AIRCRAFT TYPES</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque perspiciatis culpa enim vel
+            libero, temporibus earum minima quibusdam alias, a maiores delectus velit quaerat laborum reprehenderit in.
+            Ad, repudiandae.</p>
+        </div>
+        <div class="column is-6-tablet is-5-desktop has-text-centered">
+          <img src="assets/wheels.jpg" alt="engine" class="px-6">
+        </div>
+        <div class="column is-12-tablet is-4-desktop">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique.</p>
+          <button class="button is-info is-medium">Order Form</button>
+          <a href="./products/wheels.html" class="button is-warning is-medium">Prodcut Page</a>
+        </div>
+      </div>
+      <hr>
+      <div class="columns is-multiline is-vcentered">
+        <!--- Wings -->
+        <div class="column is-6-tablet is-3-desktop">
+          <h1 class="title">WINGS</h1>
+          <h2 class="subtitle">SERVING ALL AIRCRAFT TYPES</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque perspiciatis culpa enim vel
+            libero, temporibus earum minima quibusdam alias, a maiores delectus velit quaerat laborum reprehenderit in.
+            Ad, repudiandae.</p>
+        </div>
+        <div class="column is-6-tablet is-5-desktop has-text-centered">
+          <img src="assets/wing2.png" alt="engine" class="px-6">
+        </div>
+        <div class="column is-12-tablet is-4-desktop">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique.</p>
+          <button class="button is-info is-medium">Order Form</button>
+          <a href="./products/wings.html" class="button is-warning is-medium">Prodcut Page</a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+  <!--- This is modal. It's what the order form pops up as:-->
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head has-background-info">
+        <h1 class="modal-card-title">Order Form</h1>
+      </header>
+      <section class="modal-card-body">
+        <!--- Content of modal-->
+        <p>Goto the contact page to see the html for a form that you might want to add here...</p>
+      </section>
+    </div>
+  </div>
+
+
+  <!--- here we will have the footer-->
+
+  <section class="section">
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>This basic site was created by <strong>Thomas Morris</strong> as part of the JHub coding scheme and last
+          revised on 20/04/2020
+          Thanks for taking a look!</p>
+      </div>
+    </footer>
+  </section>
+
+  <script>
+    //modal
+
+    const orderFormBtn = document.querySelector('#orderFormBtn');
+    const modal = document.querySelector('.modal');
+    const modalBg = document.querySelector('.modal-background')
+
+    orderFormBtn.addEventListener('click', () => {
+      modal.classList.add('is-active');
+      console.log('Click')
+    });
+
+    modalBg.addEventListener('click', () => {
+      modal.classList.remove('is-active');
+    });
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
