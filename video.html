@@ -1,114 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
 
 
-    <!---Nav Bar-->
-    <nav class="navbar is-white has-shadow">
-      <div class="navbar-brand">
-        <a href="./index.html" class="navbar-item">
-          <img src="assets/OIP.png" atl="site_logo" style="max-height:70px">
-        </a>
-        
-
-        <!-- the navbar burger only shows when the screen size is reduced-->
-        <a class="navbar-burger" id="burger"> 
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+  <!---Nav Bar-->
+  <nav class="navbar is-white has-shadow">
+    <div class="navbar-brand">
+      <a href="./index.html" class="navbar-item">
+        <img src="assets/broken.jpg" atl="site_logo" style="max-height:70px">
+      </a>
 
 
-        <!--- these items will be on the left of the navbar as they have the class navbar-start-->
-        <div class="navbar-menu">
-          <div class="navbar-start">
-  
-            <a href="index.html" class="navbar-item">Home</a>
-  
-            <a href="./video.html" class="navbar-item">Video</a>
-            <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">Pages</a> <!--- nav bar link to get the button with down arrow-->
-              <div class="navbar-dropdown">
-                <!---these are the drop down elements -->
-                <a href="./orderparts.html" class="navbar-item">Order Parts</a>
-                <hr class="navbar-divider"> <!--- This is behind a divider on the screem-->
-                <a href="./contact.html" class="navbar-item"> Contact </a>
-              </div>
-            </div>
-  
-          </div>
+      <!-- the navbar burger only shows when the screen size is reduced-->
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
 
 
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-link">Sign Up</a> <!--- isprimary / is-link are the colours -->
-              <a class="button is-primary">Log In</a>
-            </div>
+    <!--- these items will be on the left of the navbar as they have the class navbar-start-->
+    <div class="navbar-menu">
+      <div class="navbar-start">
+
+        <a href="index.html" class="navbar-item">Home</a>
+
+        <a href="./video.html" class="navbar-item">Video</a>
+        <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Pages</a>
+          <!--- nav bar link to get the button with down arrow-->
+          <div class="navbar-dropdown">
+            <!---these are the drop down elements -->
+            <a href="./orderparts.html" class="navbar-item">Order Parts</a>
+            <hr class="navbar-divider">
+            <!--- This is behind a divider on the screem-->
+            <a href="./contact.html" class="navbar-item"> Contact </a>
           </div>
         </div>
 
       </div>
 
 
-    </nav>
-
-
-    <section class="hero has-background-warning is-small">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title">Video of some ML by tmor8832</p>
-          <p class="subtitle">Just an example of how a video could be displayed</p>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-link">Sign Up</a>
+            <!--- isprimary / is-link are the colours -->
+            <a class="button is-primary">Log In</a>
+          </div>
         </div>
-      
       </div>
-    </section>
+
+    </div>
+
+
+  </nav>
+
+  <section class="hero has-background-warning is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">Video of some ML by tmor8832</p>
+        <p class="subtitle">Just an example of how a video could be displayed</p>
+      </div>
+
+    </div>
+  </section>
 
 
   <!--- may you want to play around with more navigation? Breadcrumbs could work?-->
-  <section class="section pt-4 pb-0"> <!--- Pt / Pb is padding top and bottom.-->
+  <section class="section pt-4 pb-0">
+    <!--- Pt / Pb is padding top and bottom.-->
     <nav class="breadcrumb has-arrow-separator ">
       <ul class="is-size-9">
-        <li><a>Page Navigation Crumb 1</a></li>
-        <li><a>Page Navigation Crumb 2</a></li>
-        <li class="is-active"><a class="has-text-grey">Page Navigation Crumb 3</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="is-active"><a class="has-text-grey" href="video.html">Video</a></li>
       </ul>
     </nav>
   </section>
 
-  <section class="section">
-    <div class="columns is-vcentered">
-        <div class="column is-2">
-            <h1 class="title is-size-5">You can have some space on the left for a menu or text? </h1>
+  <div class="columns">
+    <div class="column">
+      <div class="column">
+        <h1 class="title has-text-centered">Video of some ML on number plates</h1>
+        <div class="container has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5giXtW3xdn8"
+            title="YouTube ML by tmor8832" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-        <div class="column is-8">
-            <h1 class="title has-text-centered">Video of some ML on number plates</h1>
-            <div class="container has-text-centered">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5giXtW3xdn8" title="YouTube ML by tmor8832" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="column is-2">
-            <h1 class="title is-size-5">Same for the right </h1>
-        </div>
+      </div>
     </div>
-    <div class="container has-text-centered">The original design of this website is from bulma and I've just adjusted it to make it my own.</div>
-  </section>
+    <div class="column">
+      <div class="column">
+        <h1 class="title has-text-centered">Video of detecting a rubber duck</h1>
+        <div class="container has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/z2xZA2tZqcI"
+            title="YouTube ML by tmor8832" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="column">
+        <h1 class="title has-text-centered">How to learn object detection</h1>
+        <div class="container has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yqkISICHH-U"
+            title="YouTube ML by tmor8832" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <!--- here we will have the footer-->
   <section class="section">
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>This basic site was created by <strong> tmor8832 </strong> to demonstrate some basic HTML, CSS and JS skills.</p>
+        <p>This basic site was created by <strong> tmor8832 </strong> to demonstrate some basic HTML, CSS and JS
+          skills.</p>
       </div>
     </footer>
   </section>
-  </body>
+</body>
+
 </html>
