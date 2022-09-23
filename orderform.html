@@ -11,7 +11,6 @@
 
 <body>
 
-
   <!---Nav Bar-->
   <nav class="navbar is-white has-shadow">
     <div class="navbar-brand">
@@ -61,11 +60,10 @@
 
     </div>
 
-
   </nav>
 
 
-  <section class="hero is-primary is-small">
+  <section class="hero is-danger is-small">
     <div class="hero-body">
       <div class="container has-text-centered">
         <p class="title">Order Form</p>
@@ -81,28 +79,90 @@
     <!--- Pt / Pb is padding top and bottom.-->
     <nav class="breadcrumb has-arrow-separator ">
       <ul class="is-size-9">
-        <li><a>Page Navigation Crumb 1</a></li>
-        <li><a>Page Navigation Crumb 2</a></li>
-        <li class="is-active"><a class="has-text-grey">Page Navigation Crumb 3</a></li>
+        <li><a>Home</a></li>
+        <li><a href="../Website/orderparts.html">Parts</a></li>
+        <li class="is-active"><a class="has-text-grey">Order Form<a></li>
       </ul>
     </nav>
   </section>
 
   <!--- section demonstrating a form. Elements could go anywhere maybe even in a pop up modal.-->
 
-  <section class="section">
-    <div class="container">
+  <form id="Order_Form">
+    <script src="lib/script.js"></script>
+    <div class="is-size-3 has-text-centered">
+      <h1>Price Calculator</h1>
+    </div>
+    <div class="container is-centered">
       <div class="field">
-        <label class="label">Name</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Text input">
+          <label class="label">Number of large engines</label>
+          <div class="select">
+            <select id="eng1" onchange="calculateEngine3();">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label class="label">Number of medium engines</label>
+          <div class="select">
+            <select id="eng2" onchange="calculateEngine3();">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label class="label">Number of tyres</label>
+          <div class="select">
+            <select id="tyre1" onchange="calculateEngine3();">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label class="label">Number of wings</label>
+          <div class="select">
+            <select id="wing1" onchange="calculateEngine3();">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
         </div>
       </div>
 
       <div class="field">
-        <label class="label">Username</label>
+        <label class="label">Your name</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-success" type="text" placeholder="Text input">
+          <input class="input is-success" id="name" type="text" placeholder="Your name here">
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -110,7 +170,6 @@
             <i class="fas fa-check"></i>
           </span>
         </div>
-        <p class="help is-success">This username is available</p>
       </div>
 
       <div class="field">
@@ -124,25 +183,13 @@
             <i class="fas fa-exclamation-triangle"></i>
           </span>
         </div>
-        <p class="help is-danger">This email is invalid</p>
       </div>
 
-      <div class="field">
-        <label class="label">Subject</label>
-        <div class="control">
-          <div class="select">
-            <select>
-              <option>Select dropdown</option>
-              <option>With options</option>
-            </select>
-          </div>
-        </div>
-      </div>
 
       <div class="field">
         <label class="label">Message</label>
         <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
+          <textarea class="textarea" placeholder="Anything you'd like to add here?"></textarea>
         </div>
       </div>
 
@@ -150,7 +197,7 @@
         <div class="control">
           <label class="checkbox">
             <input type="checkbox">
-            I agree to the <a href="#">terms and conditions</a>
+            I agree to the <a href="#"> terms and conditions</a>
           </label>
         </div>
       </div>
@@ -167,17 +214,18 @@
           </label>
         </div>
       </div>
-
+      <p style="font-size: 20px"> The total cost for your order is:<strong> £ <output type="text" id="enginetotal" value="0"></output></p>
+        <br></br>
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-link">Submit</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light">Cancel</button>
+          <input class="button is-link" type="input" value="Submit Order" onclick="greeting();">
+          <input class="button is-link" type="reset" value="Reset Values" onclick="resetEngine();">
+            </strong>
         </div>
       </div>
     </div>
-  </section>
+  </form>
+
 
   <!--- here we will have the footer-->
 
@@ -189,8 +237,6 @@
       </div>
     </footer>
   </section>
-
-
 
 </body>
 
