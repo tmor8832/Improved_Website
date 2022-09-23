@@ -25,31 +25,24 @@
         </a>
       </div>
 
+   <div class="navbar-menu">
+    <div class="navbar-start">
 
-      <!--- these items will be on the left of the navbar as they have the class navbar-start-->
-      <div class="navbar-menu">
-        <div class="navbar-start">
+      <a href="index.html" class="navbar-item">Home</a>
 
-          <a href="./index.html" class="navbar-item">Home</a>
-
-
-          <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">pages</a> <!--- nav bar link to get the button with down arrow-->
-            <div class="navbar-dropdown">
-
-              <!---these are the drop down elements -->
-              <a href="./orderparts.html" class="navbar-item">Order Parts</a>
-              <a class="navbar-item"> Contact </a>
-              <a class="navbar-item"> Option 3 </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">Option 4</a> <!--- OPtion 4 is behind a divider-->
-            </div>
-          </div>
-
-          <a href="./video.html" class="navbar-item">Video</a>
-
+      <a href="./video.html" class="navbar-item">Video</a>
+      <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">Pages</a> <!--- nav bar link to get the button with down arrow-->
+        <div class="navbar-dropdown">
+          <!---these are the drop down elements -->
+          <a href="./orderparts.html" class="navbar-item">Order Parts</a>
+          <hr class="navbar-divider"> <!--- This is behind a divider on the screem-->
+          <a href="./contact.html" class="navbar-item"> Contact </a>
         </div>
+      </div>
+
+    </div>
 
 
         <div class="navbar-end">
@@ -67,11 +60,11 @@
     </nav>
 
 
-    <section class="hero is-primary is-medium">
+    <section class="hero is-primary is-small">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <p class="title">TEST BANNER</p>
-          <p class="subtitle">Subtitle</p>
+          <p class="title">Contact Us</p>
+          <p class="subtitle">our customer service team will be happy to help</p>
         </div>
       
       </div>
@@ -103,7 +96,7 @@
       <div class="field">
         <label class="label">Username</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+          <input class="input is-success" type="text" placeholder="Text input">
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -117,7 +110,7 @@
       <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+          <input class="input is-danger" type="email" placeholder="Email input" value="example@gmail.com">
           <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
           </span>
@@ -183,11 +176,12 @@
 
   <!--- here we will have the footer-->
 
+  <!--- here we will have the footer-->
+
   <section class="section">
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>This basic site was created by <strong>Thomas Morris</strong> as part of the JHub coding scheme and last revised on 20/04/2020
-          Thanks for taking a look!</p>
+        <p>This basic site was created by <strong> tmor8832 </strong> to demonstrate some basic HTML, CSS and JS skills.</p>
       </div>
     </footer>
   </section>

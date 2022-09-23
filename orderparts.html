@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Bulma!</title>
+  <title>Order your parts here!</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
-
 
   <!---Nav Bar-->
   <nav class="navbar is-white has-shadow">
@@ -17,7 +15,6 @@
       <a href="./index.html" class="navbar-item">
         <img src="assets/OIP.png" atl="site_logo" style="max-height:70px">
       </a>
-
 
       <!-- the navbar burger only shows when the screen size is reduced-->
       <a class="navbar-burger" id="burger">
@@ -29,31 +26,23 @@
 
 
     <!--- these items will be on the left of the navbar as they have the class navbar-start-->
-    <div class="navbar-menu">
-      <div class="navbar-start">
+       <!--- these items will be on the left of the navbar as they have the class navbar-start-->
+       <div class="navbar-menu">
+        <div class="navbar-start">
 
-        <a href="./index.html" class="navbar-item">Home</a>
-
-
-        <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">pages</a>
-          <!--- nav bar link to get the button with down arrow-->
-          <div class="navbar-dropdown">
-
-            <!---these are the drop down elements -->
-            <a class="navbar-item">Order Parts</a>
-            <a href="contact.html" class="navbar-item"> Contact </a>
-            <a class="navbar-item"> Option 3 </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">Option 4</a>
-            <!--- OPtion 4 is behind a divider-->
+          <a href="index.html" class="navbar-item">Home</a>
+          <a href="./video.html" class="navbar-item">Video</a>
+          <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Pages</a> <!--- nav bar link to get the button with down arrow-->
+            <div class="navbar-dropdown">
+              <!---these are the drop down elements -->
+              <a href="./orderparts.html" class="navbar-item">Order Parts</a>
+              <hr class="navbar-divider"> <!--- This is behind a divider on the screem-->
+              <a href="./contact.html" class="navbar-item"> Contact </a>
+            </div>
           </div>
         </div>
-
-        <a href="./video.html" class="navbar-item">Video</a>
-
-      </div>
 
 
       <div class="navbar-end">
@@ -65,7 +54,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
 
@@ -94,18 +82,16 @@
         <!--- Engines -->
         <div class="column is-6-tablet is-3-desktop">
           <h1 class="title">ENGINES</h1>
-          <h2 class="subtitle">SERVING ALL AIRCRAFT TYPES</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque perspiciatis culpa enim vel
-            libero, temporibus earum minima quibusdam alias, a maiores delectus velit quaerat laborum reprehenderit in.
-            Ad, repudiandae.</p>
+          <h2 class="subtitle">You need one of these to fly</h2>
+          <p>CLick on the order form to order an engine or two!</p>
         </div>
         <div class="column is-6-tablet is-5-desktop has-text-centered">
           <img src="assets/engine.jpg" alt="engine" class="px-6">
         </div>
         <div class="column is-12-tablet is-4-desktop">
-          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique.</p>
+          <p class="mb-4">Order your engines by clicking the link below...</p>
           <button class="button is-info is-medium" id="orderFormBtn">Order Form</button>
-          <a href="./products/engine.html" class="button is-warning is-medium">Prodcut Page</a>
+          <a href="./products/engine.html" class="button is-warning is-medium">Product Page</a>
         </div>
       </div>
       <hr>
@@ -115,18 +101,16 @@
       <div class="columns is-multiline is-vcentered">
         <div class="column is-6-tablet is-3-desktop">
           <h1 class="title">WHEELS</h1>
-          <h2 class="subtitle">SERVING ALL AIRCRAFT TYPES</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque perspiciatis culpa enim vel
-            libero, temporibus earum minima quibusdam alias, a maiores delectus velit quaerat laborum reprehenderit in.
-            Ad, repudiandae.</p>
+          <h2 class="subtitle">You need these to land</h2>
+          <p>Click on the order form to order some wheels</p>
         </div>
         <div class="column is-6-tablet is-5-desktop has-text-centered">
           <img src="assets/wheels.jpg" alt="engine" class="px-6">
         </div>
         <div class="column is-12-tablet is-4-desktop">
-          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique.</p>
+          <p class="mb-4">Order your wheels by clicking the link below...</p>
           <button class="button is-info is-medium">Order Form</button>
-          <a href="./products/wheels.html" class="button is-warning is-medium">Prodcut Page</a>
+          <a href="./products/wheels.html" class="button is-warning is-medium">Product Page</a>
         </div>
       </div>
       <hr>
@@ -134,18 +118,16 @@
         <!--- Wings -->
         <div class="column is-6-tablet is-3-desktop">
           <h1 class="title">WINGS</h1>
-          <h2 class="subtitle">SERVING ALL AIRCRAFT TYPES</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque perspiciatis culpa enim vel
-            libero, temporibus earum minima quibusdam alias, a maiores delectus velit quaerat laborum reprehenderit in.
-            Ad, repudiandae.</p>
+          <h2 class="subtitle">These are quite essential</h2>
+          <p>Click on the order form to order some wings</p>
         </div>
         <div class="column is-6-tablet is-5-desktop has-text-centered">
           <img src="assets/wing2.png" alt="engine" class="px-6">
         </div>
         <div class="column is-12-tablet is-4-desktop">
-          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique.</p>
+          <p class="mb-4">Order your engines by clicking the link below...</p>
           <button class="button is-info is-medium">Order Form</button>
-          <a href="./products/wings.html" class="button is-warning is-medium">Prodcut Page</a>
+          <a href="./products/wings.html" class="button is-warning is-medium">Product Page</a>
         </div>
       </div>
 
@@ -176,12 +158,15 @@
   <section class="section">
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>This basic site was created by <strong>Thomas Morris</strong> as part of the JHub coding scheme and last
-          revised on 20/04/2020
-          Thanks for taking a look!</p>
+        <p>This basic site was created by <strong> tmor8832 </strong> to demonstrate some basic HTML, CSS and JS skills.</p>
       </div>
     </footer>
   </section>
+
+
+
+  </body>
+</html>
 
   <script>
     //modal

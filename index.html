@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Opening Page!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   </head>
   <body>
@@ -32,22 +32,17 @@
 
           <a href="index.html" class="navbar-item">Home</a>
 
-
+          <a href="./video.html" class="navbar-item">Video</a>
           <!-- this item will have a drop down list. using the bulma framework you can simple add in things like "has-dropdown"-->
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">pages</a> <!--- nav bar link to get the button with down arrow-->
+            <a class="navbar-link">Pages</a> <!--- nav bar link to get the button with down arrow-->
             <div class="navbar-dropdown">
-
               <!---these are the drop down elements -->
               <a href="./orderparts.html" class="navbar-item">Order Parts</a>
+              <hr class="navbar-divider"> <!--- This is behind a divider on the screem-->
               <a href="./contact.html" class="navbar-item"> Contact </a>
-              <a class="navbar-item"> Option 3 </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">Option 4</a> <!--- OPtion 4 is behind a divider-->
             </div>
           </div>
-
-          <a href="./video.html" class="navbar-item">Video</a>
 
         </div>
 
@@ -69,11 +64,11 @@
 <!--- Hero Class gives you a full width banner. In it's default version it looks like this but can use a differnt ]
 class to take up more space vertically if required. Useful for an announcement of some kind maybe -->
 
-  <section class="hero is-danger">
+  <section class="hero has-background-warning is-small">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <p class="title">A Full Width Banner to Potentially showcase something!</p>
-        <p class="subtitle">Subtitle</p>
+        <p class="title">Now you've seen this cool banner, let us repair your aircraft!</p>
+        <p class="subtitle">Reduce, Re-use, Recycle, Embrace Capitalism</p>
       </div>
     
     </div>
@@ -123,11 +118,10 @@ class to take up more space vertically if required. Useful for an announcement o
 
       <div class="column">
         <div class="content"> <!--- if you're simply using HTML tags best to just wrap in a content container-->
-          <p class="subtitle">This bespoke site lets you calculate the cost of ordering spare parts for your aircraft!
+          <p class="subtitle">This site lets you calculate the cost of ordering spare parts for your aircraft. If you broke it, you're in the right place.
 
-            Thank-you for visiting and I hope you find everything that you need. Any suggestions for how we can make the site better are welcome.
-            
-            Lets get that aircraft up and running again!</p>
+            Let us fix it.
+          </p>
         </div>
         <div class="columns">
           <div class="column is-4-desktop">
@@ -143,19 +137,31 @@ class to take up more space vertically if required. Useful for an announcement o
         </div>
 
         <div class="columns is-multiline"> <!--- many sizes available but made up of a 12 grid system-->
-          <div class="column is-3-desktop is-6-tablet">
+          <div class="column is-3-desktop is-6-tablet has-background-info">
             <div class="has-background-info">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis sint illo itaque iusto, rem dicta debitis nemo dignissimos dolores earum eos inventore quibusdam dolor atque. Illum, minus soluta. Numquam.</p>
+              <p> Its interesting to see how we can apply different background colours to paragraphs as opposed to using the default background colour. 
+
+                You could link these boxes to something else within the website if you wanted to.
+              </p>
             </div> <!--- demoing here the different between giving the column a background colour compared to the div inside-->
           </div>
           <div class="column is-3-desktop is-6-tablet has-background-success">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum ex doloremque qui necessitatibus odit voluptas sed obcaecati eum? Reiciendis minus, ex vel temporibus dignissimos consequuntur sunt. Aliquid, atque maiores!</p>
+            <p> Its interesting to see how we can apply different background colours to paragraphs as opposed to using the default background colour. 
+
+              You could link these boxes to something else within the website if you wanted to.
+            </p>
           </div>
           <div class="column is-3-desktop is-6-tablet has-background-danger">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, iusto esse magni ducimus inventore quae, architecto rem veritatis voluptates recusandae cum. Autem, explicabo non? Tempora cum vitae amet soluta doloribus!</p>
+            <p> Its interesting to see how we can apply different background colours to paragraphs as opposed to using the default background colour. 
+
+              You could link these boxes to something else within the website if you wanted to.
+            </p>
           </div>
           <div class="column is-3-desktop is-6-tablet has-background-warning"> <!---is-6-tablet changes the layout depending on screen size. You need the is-multiline class in the columns for it to work-->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ipsam ea harum! Cupiditate assumenda cumque aperiam, eius qui dolorem consectetur consequuntur suscipit optio dolores porro quidem officia possimus. Modi, odit?</p>
+            <p> Its interesting to see how we can apply different background colours to paragraphs as opposed to using the default background colour. 
+
+              You could link these boxes to something else within the website if you wanted to.
+            </p>
           </div>
         </div>
 
@@ -173,8 +179,7 @@ class to take up more space vertically if required. Useful for an announcement o
   <section class="section">
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>This basic site was created by <strong>Thomas Morris</strong> as part of the JHub coding scheme and last revised on 20/04/2020
-          Thanks for taking a look!</p>
+        <p>This basic site was created by <strong> tmor8832 </strong> to demonstrate some basic HTML, CSS and JS skills.</p>
       </div>
     </footer>
   </section>
